@@ -108,10 +108,17 @@ body {
   border-bottom-color: #fff;
 }
 
-iframe {
+#soundcloud {
   border: none;
   width: 100%;
   height: 400px;
+}
+
+#facebookShare {
+  border: none;
+  width: 70px;
+  height: 20px;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
