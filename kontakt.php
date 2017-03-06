@@ -52,6 +52,8 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
     <meta name="author" content="Siniša Mihajlović">
     <link rel="icon" href="ground_icon.png">
 
+		<link rel="canonical" href="http://spojsamasom.in.rs/kontakt.php">
+
     <title>Spoj sa masom - Kontakt forma</title>
 
     <!-- Bootstrap core CSS -->
@@ -97,7 +99,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 
 
                     <div>
-                        <form class="form-horizontal inner" role="form" method="post" action="kontakt.php">
+                        <form class="form-horizontal inner" method="post" action="kontakt.php">
                             <div class="form-group">
                                 <label for="name" class="col-sm-2 control-label">Ime</label>
                                 <div class="col-sm-8">
@@ -115,7 +117,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
                             <div class="form-group">
                                 <label for="message" class="col-sm-2 control-label">Poruka</label>
                                 <div class="col-sm-8">
-                                    <textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+                                    <textarea class="form-control" id="message" rows="4" name="message" placeholder="Poruka"><?php echo htmlspecialchars($_POST['message']);?></textarea>
                                     <?php echo "<p class='text-danger'>$errMessage</p>";?>
                                 </div>
                             </div>
